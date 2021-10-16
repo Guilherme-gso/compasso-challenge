@@ -1,10 +1,10 @@
-import { UseCase } from '@/presentation/use-case'
-import { Controller } from '@/presentation/controller'
+import { UseCase } from '@/presentation/protocols/use-case'
+import { Controller } from '@/presentation/protocols/controller'
 import {
   created,
   HttpResponse,
   HttpRequest
-} from '@/presentation/controller/http-helper'
+} from '@/presentation/helpers/http-helper'
 
 export class CreateCityController implements Controller {
   constructor(private readonly usecase: UseCase) {}
