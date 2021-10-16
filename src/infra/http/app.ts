@@ -1,8 +1,9 @@
 import express from 'express'
+import { appRouter } from './routes/app.routes'
 
 const app = express()
 
 app.use(express.json())
-app.get('/', (req, res) => res.send('OK'))
+app.use('/api', appRouter)
 
 export { app }
