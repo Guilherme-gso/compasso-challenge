@@ -17,4 +17,12 @@ export class FakeCityRepository implements CityRepository {
     this.save(city)
     return city
   }
+
+  async findByName(cityName: string): Promise<City | undefined> {
+    return this.cities.find(city => city.name === cityName)
+  }
+
+  async findByUf(uf: string): Promise<City | undefined> {
+    return this.cities.find(city => city.uf === uf)
+  }
 }

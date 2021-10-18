@@ -1,13 +1,18 @@
 import { UseCase } from '@/presentation/protocols/use-case'
-import { CreateCityDto } from '../../dtos/create-city.dto'
 import { City } from '../../infra/typeorm/entities/city'
 import { CityRepository } from '../../repositories/city-repository'
 
-export class CreateCityUseCase implements UseCase {
+export class FindCityByNameUseCase implements UseCase {
   constructor(private readonly cityRepository: CityRepository) {}
 
-  async perform(cityData: CreateCityDto): Promise<City> {
-    const city = await this.cityRepository.create(cityData)
+  async perform(cityName: string): Promise<City> {
+    const city = await this.cityRepository.findByName(cityName)
+
+    if (!city) {
+      // throws error
+      throw new Error()
+    }
+
     return city
   }
 }
