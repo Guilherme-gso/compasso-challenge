@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido como desafio do processo seletivo da Compasso UOL 
 - Babel
 
 
-## Arquiteturas utilizados
+## Arquiteturas utilizadas
 - DDD (Domain Driven Design)
 - TDD (Test Driven Development)
 - POO (Programação Orientada a Objetos)
