@@ -2,8 +2,12 @@ module.exports = {
   name: 'default',
   type: 'postgres',
   url: process.env.POSTGRES_URL,
-  entities: ['./src/modules/**/infra/typeorm/entities/*.ts'],
-  migrations: ['./src/infra/typeorm/migrations/*.ts'],
+  entities: [
+    `./${process.env.TS_NODE_ENV === 'prod' ? 'dist' : 'src'}/modules/**/infra/typeorm/entities/*.{js,ts}`
+  ],
+  migrations: [
+    `./${process.env.TS_NODE_ENV === 'prod' ? 'dist' : 'src'}/infra/typeorm/migrations/*.{js,ts}`
+  ],
   cli: {
     migrationsDir: './src/infra/typeorm/migrations'
   }

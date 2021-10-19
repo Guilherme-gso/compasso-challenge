@@ -19,8 +19,8 @@ export class FakeCustomerRepository implements CustomerRepository {
     return customer
   }
 
-  async findByName(customerName: string): Promise<Customer | undefined> {
-    return this.customers.find(customer => customer.fullName === customerName)
+  async findByName(customerName: string): Promise<Customer[]> {
+    return this.customers.filter(customer => customer.fullName === customerName)
   }
 
   async findById(customerId: string): Promise<Customer | undefined> {

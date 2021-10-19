@@ -1,3 +1,4 @@
+import { CityAlreadyExistsError } from '@/presentation/errors/city-already-exists-error'
 import { FakeCityRepository } from '../../repositories/implementations/fake-city-repository'
 import { CreateCityUseCase } from './create-city-use-case'
 
@@ -17,5 +18,19 @@ describe('create-city-use-case', () => {
     })
 
     expect(city).toHaveProperty('id')
+  })
+
+  it('should not create duplicates cities', async () => {
+    await createCityUseCase.perform({
+      name: 'Hortolândia',
+      uf: 'SP'
+    })
+
+    await expect(
+      createCityUseCase.perform({
+        name: 'Hortolândia',
+        uf: 'SP'
+      })
+    ).rejects.toBeInstanceOf(CityAlreadyExistsError)
   })
 })

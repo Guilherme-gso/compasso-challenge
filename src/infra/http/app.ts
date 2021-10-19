@@ -1,3 +1,5 @@
+import 'express-async-errors'
+
 import express from 'express'
 import { appRouter } from './routes/app.routes'
 

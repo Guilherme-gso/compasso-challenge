@@ -78,8 +78,6 @@ export function tooMany(error: Error): HttpResponse {
 }
 
 export function fail(error: Error): HttpResponse {
-  console.log(error)
-
   return {
     statusCode: 500,
     body: {

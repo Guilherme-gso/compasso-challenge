@@ -1,15 +1,14 @@
-import { UseCase } from '@/presentation/protocols/use-case'
 import { CityRepository } from '../../repositories/city-repository'
 import { FakeCityRepository } from '../../repositories/implementations/fake-city-repository'
-import { FindFakeCityByUfUseCase } from './find-city-by-uf-use-case'
+import { FindCityByUfUseCase } from './find-city-by-uf-use-case'
 
 let fakeCityRepository: CityRepository
-let findCityByUfUseCase: UseCase
+let findCityByUfUseCase: FindCityByUfUseCase
 
 describe('find-city-by-uf-use-case', () => {
   beforeEach(() => {
     fakeCityRepository = new FakeCityRepository()
-    findCityByUfUseCase = new FindFakeCityByUfUseCase(fakeCityRepository)
+    findCityByUfUseCase = new FindCityByUfUseCase(fakeCityRepository)
   })
 
   it('should find a city by uf', async () => {
@@ -18,7 +17,7 @@ describe('find-city-by-uf-use-case', () => {
       uf: 'RJ'
     })
 
-    const city = await findCityByUfUseCase.perform(createdCity.uf)
-    expect(city).toHaveProperty('id')
+    const cities = await findCityByUfUseCase.perform(createdCity.uf)
+    expect(cities).toEqual([createdCity])
   })
 })

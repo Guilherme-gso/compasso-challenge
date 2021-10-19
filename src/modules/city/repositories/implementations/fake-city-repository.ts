@@ -22,7 +22,7 @@ export class FakeCityRepository implements CityRepository {
     return this.cities.find(city => city.name === cityName)
   }
 
-  async findByUf(uf: string): Promise<City | undefined> {
-    return this.cities.find(city => city.uf === uf)
+  async findByUf(uf: string): Promise<City[]> {
+    return this.cities.filter(city => city.uf === uf)
   }
 }

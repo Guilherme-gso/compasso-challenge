@@ -22,10 +22,10 @@ describe('find-customer-by-name-use-case', () => {
       cityOfResidence: 'Hortolândia'
     })
 
-    const customer = await findCustomerByNameUseCase.perform(
+    const customers = await findCustomerByNameUseCase.perform(
       createdCustomer.fullName
     )
 
-    expect(customer).toHaveProperty('id')
+    expect(customers).toEqual([createdCustomer])
   })
 })
