@@ -43,7 +43,13 @@ Esse projeto foi desenvolvido como desafio do processo seletivo da Compasso UOL 
   git clone https://github.com/Guilherme-gso/compasso-challenge.git
 ```
 
-Após realizar a cópia do projeto em sua máquina local será necessário a configuração das variáveis de ambiente. 
+*Instale as depêndencias:*
+
+```bash
+ npm install
+```
+
+Após realizar a cópia do projeto e instalar as dependências em sua máquina local será necessário a configuração das variáveis de ambiente. 
 <br />
 <br />
 Utilize o arquivo ```.env.example``` localizado na raíz do projeto como base para criar o seu arquivo ```.env```: 
