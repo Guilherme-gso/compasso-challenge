@@ -98,7 +98,7 @@ https://compasso-uol-challenge.herokuapp.com/api
 ## Documentação
 https://compasso-uol-challenge-node.vercel.app/
 
-[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=&uri=https%3A%2F%2Fcompasso-uol-challenge-node.vercel.app%2F)
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=&uri=https%3A%2F%2Fcompasso-uol-challenge-node.vercel.app%2Finsomnia.json)
 
 
 Feito com :hearts: por Guilherme Oliveira :wave: [Linkedin!](https://www.linkedin.com/in/guilherme-oliveira-59291a19b/)
