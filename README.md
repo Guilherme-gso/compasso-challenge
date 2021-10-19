@@ -10,7 +10,7 @@
     <img alt="Size" src="https://img.shields.io/github/repo-size/Guilherme-gso/compasso-challenge">
 </div>
 
-# Sobre o projeto
+## Sobre o projeto
 Esse projeto foi desenvolvido como desafio do processo seletivo da Compasso UOL para vaga de NodeJS. Foram utilizados padrões de projeto como DDD (Domain Driven Design), TDD (Test Driven Development) e POO (Programação Orientada a Objetos) avançado. Busquei alcançar o código mais legível, estruturado e limpo utilizando conceitos de clean-architecture, respeitando as responsabilidades de cada parte isolada do código através dos princípios SOLID e separação por camadas utilizando o DDD, todas as regras de negócio foram implementadas com base no TDD, ou seja, o desenvolvimento de todas as funcionalidades foi com base em testes unitários. A API está alocada no Heroku com uma instância de Banco de Dados relacional PostgreSQL e sua documentação online está disponível <a href="https://compasso-uol-challenge-node.vercel.app/
 ">Aqui.</a>
 
