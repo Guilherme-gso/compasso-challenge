@@ -1,7 +1,7 @@
 module.exports = {
   name: 'default',
   type: 'postgres',
-  url: process.env.POSTGRES_URL,
+  url: process.env.DATABASE_URL,
   entities: [
     `./${process.env.TS_NODE_ENV === 'prod' ? 'dist' : 'src'}/modules/**/infra/typeorm/entities/*.{js,ts}`
   ],
