@@ -85,7 +85,7 @@ Nesse projeto estaremos utilizando o recurso das migrations para versionamento d
 
 ## Inicializando Projeto
 
-Pronto, o projeto está pronto para ser inicializado, se ocorreu tudo basta utilizar o comando: ```npm run dev``` que inicializará o projeto em sua máquina local, por padrão ele irá rodar na porta *3333* (Você pode mudar a porta padrão nas variáveis de ambiente)
+Pronto, o projeto está pronto para ser inicializado, basta utilizar o comando: ```npm run dev``` que inicializará o projeto em sua máquina local, por padrão ele irá rodar na porta *3333* (Você pode mudar a porta padrão nas variáveis de ambiente)
 
 Após ser inicializado, você receberá um output em seu terminal indicando que o processo foi inicializado: 
 
