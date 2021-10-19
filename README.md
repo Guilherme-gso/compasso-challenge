@@ -5,9 +5,9 @@
 <br />
 
 <div margin="10px 0" align="center">
-    <img alt="Github Top Language" src="https://img.shields.io/github/languages/top/guilherme-gso/compasso-challenge">
-    <img alt="Github language count" src="https://img.shields.io/github/languages/count/guilherme-gso/compasso-challenge">
-    <img alt="Size" src="https://img.shields.io/github/repo-size/guilherme-gso/compasso-challenge">
+    <img alt="Github Top Language" src="https://img.shields.io/github/languages/top/Guilherme-gso/compasso-challenge">
+    <img alt="Github language count" src="https://img.shields.io/github/languages/count/Guilherme-gso/compasso-challenge">
+    <img alt="Size" src="https://img.shields.io/github/repo-size/Guilherme-gso/compasso-challenge">
 </div>
 
 # Sobre o projeto
