@@ -49,6 +49,7 @@ Esse projeto foi desenvolvido como desafio do processo seletivo da Compasso UOL 
  npm install
 ```
 
+
 Após realizar a cópia do projeto e instalar as dependências em sua máquina local será necessário a configuração das variáveis de ambiente. 
 <br />
 <br />
@@ -66,6 +67,12 @@ Após criar o seu arquivo ```.env``` você deverá ter algo parecido com isso:
     TS_NODE_ENV=dev
     PORT=3333
     DATABASE_URL=postgres://postgres:docker@localhost:5432/challenge-compasso
+```
+
+## Testes automatizados
+Esse projeto foi construído com base em testes automatizados, para executá-los utilize o seguinte comando:
+```bash
+  npm run test
 ```
 
 ## Migrando Banco de Dados
