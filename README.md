@@ -43,7 +43,7 @@ Esse projeto foi desenvolvido como desafio do processo seletivo da Compasso UOL 
   git clone https://github.com/Guilherme-gso/compasso-challenge.git
 ```
 
-*Instale as depêndencias:*
+*Instale as dependências:*
 
 ```bash
  npm install
